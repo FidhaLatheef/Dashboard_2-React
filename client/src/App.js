@@ -4,6 +4,7 @@ import PieChart from './components/PieChart';
 import Graph from './components/Graph';
 import ProfileCard from './components/ProfileCard';
 import SideBar from './components/sideBar';
+import Footer from './components/Footer';
 
 const App = () => {
   return (
@@ -30,13 +31,13 @@ const App = () => {
           </div>
           <div className="main-content">
             <div className="row">
-           
+              
             </div>
             <div className="row ">
-            
-           <ProfileCard/>
+              <Table />
+              <ProfileCard />
             </div>
-      
+            <Footer />
           </div>
         </div>
       </div>
