@@ -14,7 +14,7 @@ const TableComponent = () => {
 
   return (
     <div className="col-lg-7 col-md-12">
-    <div className="card" style={{ minHeight: 485 }}>
+    <div className="card" style={{ minHeight: 400 }}>
       
       <div className="card-content table-responsive">
         <table className="table table-hover">
@@ -27,49 +27,15 @@ const TableComponent = () => {
             </tr>
           </thead>
           <tbody>
-            <tr>
-              <td>1</td>
-              <td>Bob Williams</td>
-              <td>$23,566</td>
-              <td>USA</td>
-            </tr>
-            <tr>
-              <td>2</td>
-              <td>Mike Tyson</td>
-              <td>$10,200</td>
-              <td>Canada</td>
-            </tr>
-            <tr>
-              <td>3</td>
-              <td>Tim Sebastian</td>
-              <td>$32,190</td>
-              <td>Netherlands</td>
-            </tr>
-            <tr>
-              <td>4</td>
-              <td>Philip Morris</td>
-              <td>$31,123</td>
-              <td>Korea, South</td>
-            </tr>
-            <tr>
-              <td>5</td>
-              <td>Minerva Hooper</td>
-              <td>$23,789</td>
-              <td>South Africa</td>
-            </tr>
-            <tr>
-              <td>6</td>
-              <td>Hulk Hogan</td>
-              <td>$43,120</td>
-              <td>Netherlands</td>
-            </tr>
-            <tr>
-              <td>7</td>
-              <td>Angelina Jolie </td>
-              <td>$12,140</td>
-              <td>Australia</td>
-            </tr>
-          </tbody>
+              {tableData.map((item) => (
+                <tr key={item.id}>
+                  <td>{item.id}</td>
+                  <td>{item.name}</td>
+                  <td>{item.quantity}</td>
+                  <td>{item.price}</td>
+                </tr>
+              ))}
+            </tbody>
         </table>
       </div>
     </div>
