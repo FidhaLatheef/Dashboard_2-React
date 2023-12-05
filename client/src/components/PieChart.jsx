@@ -1,21 +1,13 @@
 import React, { useEffect, useState } from 'react';
 import apiService from '../services/apiService';
+import { Pie } from 'react-chartjs-2';
 
 function PieChart() {
-  const [tableData, setTableData] = useState([]);
-
-  useEffect(() => {
-    apiService.getPieChartData().then((data) => {
-        console.log(data)
-      setTableData(data);
-    });
-  }, []);
 
   return (
-    <div>
-      {/* Render your table using tableData */}
+    <div className='card col-md-4'>
     </div>
   );
 }
 
-export default PieChart
+export default PieChart;
