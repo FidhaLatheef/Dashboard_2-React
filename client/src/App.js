@@ -37,7 +37,6 @@ const App = () => {
                   </div>
                 </div>
               </div>
-
             </div>
             <div className="row ">
               <Graph />
@@ -46,7 +45,7 @@ const App = () => {
               <Table />
               <ProfileCard />
             </div>
-            <Pagination/>
+            <Pagination />
             <Footer />
           </div>
         </div>

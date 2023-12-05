@@ -7,7 +7,7 @@ function Paginations() {
   return (
     <div className="d-flex justify-content-center align-items-center my-3">
     <Stack spacing={2}>
-      <Pagination count={Pages} color="primary" />
+      <Pagination count={Pages}  />
     </Stack>
   </div>
   )
