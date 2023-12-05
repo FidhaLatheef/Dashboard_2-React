@@ -7,6 +7,7 @@ import SideBar from './components/sideBar';
 import Footer from './components/Footer';
 import Navbar from './components/Navbar';
 import rec from './assets/rect.jpg'
+import Pagination from './components/Pagination';
 
 const App = () => {
   return (
@@ -21,18 +22,18 @@ const App = () => {
               <h3 style={{ fontWeight: 400, paddingLeft: "10px", color: 'black' }} className="mt-4 mb-4">
                 Good Morning !  🌞
               </h3>
-              <div className="card mb-3"style={{ maxWidth: 240  }}>
+              <div className="card mb-3" style={{ maxWidth: 240 }}>
                 <div className="row g-0">
                   <div className="col-md-8">
                     <div className="card-body">
-                      <h5 className="card-title" style={{marginTop:"-19px"}}>John Doe</h5>
-                      <p className="card-text" style={{marginBottom:"-20px"}}>
+                      <h5 className="card-title" style={{ marginTop: "-19px" }}>John Doe</h5>
+                      <p className="card-text" style={{ marginBottom: "-20px" }}>
                         john@doe.com
                       </p>
                     </div>
                   </div>
                   <div className="col-md-4">
-                    <img src={rec} alt="Trendy Pants and Shoes" className=" img-fluid" style={{ borderRadius:"10px",}} />
+                    <img src={rec} alt="Trendy Pants and Shoes" className=" img-fluid" style={{ borderRadius: "10px", }} />
                   </div>
                 </div>
               </div>
@@ -45,7 +46,7 @@ const App = () => {
               <Table />
               <ProfileCard />
             </div>
-            
+            <Pagination/>
             <Footer />
           </div>
         </div>

@@ -4,7 +4,7 @@ import media from '../assets/media.png'
 function ProfileCard() {
   return (
  
-       <div className="col-lg-5 col-md-12">
+       <div className="col-lg-4 col-md-12">
                 <div className="card" style={{ width: '18rem' }}>
                   <img src={media} className="card-img-top" alt="Chicago Skyscrapers" />
                   <div className="card-body text-center">

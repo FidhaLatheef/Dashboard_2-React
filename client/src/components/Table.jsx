@@ -13,7 +13,7 @@ const TableComponent = () => {
   }, []);
 
   return (
-    <div className="col-lg-7 col-md-12">
+    <div className="col-lg-8 col-md-12">
     <div className="card" style={{ minHeight: 400 }}>
       
       <div className="card-content table-responsive">
