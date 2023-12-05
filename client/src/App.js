@@ -19,6 +19,7 @@ const App = () => {
           <div className="main-content">
             <div className="row ">            
               <Graph/>
+              <PieChart/>
               <Table />
               <ProfileCard />
             </div>
