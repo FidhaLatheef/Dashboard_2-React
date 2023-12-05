@@ -42,12 +42,16 @@ function Graph() {
             },
           ],
         },
+        options: {
+          responsive: true,
+          maintainAspectRatio: false, 
+        },
       });
     }
   }, [graphData]);
 
   return (
-    <div className='card col-md-4'>
+    <div className='card  col-lg-7'>
       <canvas ref={chartRef} />
     </div>
   );

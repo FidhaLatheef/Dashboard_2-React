@@ -6,7 +6,7 @@ import ProfileCard from './components/ProfileCard';
 import SideBar from './components/sideBar';
 import Footer from './components/Footer';
 import Navbar from './components/Navbar';
-
+import rec from './assets/rect.jpg'
 
 const App = () => {
   return (
@@ -15,14 +15,37 @@ const App = () => {
         <div className="body-overlay" />
         <SideBar />
         <div id="content">
-         <Navbar/>
+          <Navbar />
           <div className="main-content">
-            <div className="row ">            
-              <Graph/>
-              <PieChart/>
+            <div className='d-flex flex-column flex-md-row justify-content-between align-items-center'>
+              <h3 style={{ fontWeight: 400, paddingLeft: "10px", color: 'black' }} className="mt-4 mb-4">
+                Good Morning !  🌞
+              </h3>
+              <div className="card mb-3"style={{ maxWidth: 240  }}>
+                <div className="row g-0">
+                  <div className="col-md-8">
+                    <div className="card-body">
+                      <h5 className="card-title" style={{marginTop:"-19px"}}>John Doe</h5>
+                      <p className="card-text" style={{marginBottom:"-20px"}}>
+                        john@doe.com
+                      </p>
+                    </div>
+                  </div>
+                  <div className="col-md-4">
+                    <img src={rec} alt="Trendy Pants and Shoes" className=" img-fluid" style={{ borderRadius:"10px",}} />
+                  </div>
+                </div>
+              </div>
+
+            </div>
+            <div className="row ">
+              <Graph />
+              <div className="col-md-1"></div>
+              <PieChart />
               <Table />
               <ProfileCard />
             </div>
+            
             <Footer />
           </div>
         </div>
